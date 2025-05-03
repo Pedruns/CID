@@ -63,7 +63,8 @@ if __name__ == '__main__':
 
     slr = SLR(dataset)
     print(f'y = {slr.b0()} + {slr.b1()}*x')
-    print(f'\n \nCalculo de advertising')
+    print(f'\n \nCalculo de sales para 5 valores de advertising aleatorios entre 20 y 60')
+    print('--------------------------------------------------')
     for i in range(0,5):
         advertising = random.randint(20,60)
         y = slr.b0() + slr.b1()*advertising
